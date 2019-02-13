@@ -30,14 +30,14 @@
             android:id="@+id/buttonEnter"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_weight="5"
             android:text="@string/login_enter"/>
 
         <Button
-            android:id="@+id/Register"
+            android:id="@+id/buttonRegister"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_weight="4"
             android:text="@string/login_register"/>
 
     </LinearLayout>
