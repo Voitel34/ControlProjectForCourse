@@ -23,9 +23,10 @@ public class AuthActivity extends AppCompatActivity {
         public void onClick(View v) {
 
             if (isEmailValid() && isPasswordValid()){
-                Intent StartProfileIntent = new Intent(AuthActivity.this, ProfileActivity.class);
-                StartProfileIntent.putExtra(ProfileActivity.EMAIL_KEY, mLogin.getText().toString());
-                StartProfileIntent.putExtra(ProfileActivity.PASSWORD_KEY, mPassword.getText().toString());
+                Intent StartProfileIntent =
+                        new Intent(AuthActivity.this, ProfileActivity.class);
+                StartProfileIntent.putExtra(ProfileActivity.USER_KEY,
+                        new User(mLogin.getText().toString(), mPassword.getText().toString()));
                 startActivity(StartProfileIntent);
             }
             else {
